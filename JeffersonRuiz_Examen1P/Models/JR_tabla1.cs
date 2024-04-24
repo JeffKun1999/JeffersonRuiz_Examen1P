@@ -4,6 +4,8 @@ namespace JeffersonRuiz_Examen1P.Models
 {
     public class JR_tabla1
     {
+        [Key]
+        public int Id { get; set; }
         public int JR_Int_Atributo1 { get; set; }
         [Required]
         public string? JR_String_Atributo2 { get; set; }

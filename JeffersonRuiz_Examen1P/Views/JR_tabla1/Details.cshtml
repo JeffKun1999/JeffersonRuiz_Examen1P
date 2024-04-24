@@ -1,0 +1,48 @@
+﻿@model JeffersonRuiz_Examen1P.Models.JR_tabla1
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>JR_tabla1</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JR_Int_Atributo1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JR_Int_Atributo1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JR_String_Atributo2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JR_String_Atributo2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JR_Booleano_Atributo3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JR_Booleano_Atributo3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JR_Decimal_Atributo4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JR_Decimal_Atributo4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JR_Fecha_Atributo5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JR_Fecha_Atributo5)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
